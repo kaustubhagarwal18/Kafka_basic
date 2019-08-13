@@ -1,8 +1,11 @@
 docker --version
 
-sudo docker run hello-world
+sudo docker info
 
-sudo docker images
+sudo docker run hello-world  -- run hello-world container
 
-sudo docker ps -a
+sudo docker images   --   all the images downloaded on users computer
 
+sudo docker ps -a      ----- check which containers are/were running
+
+sudo docker run -it ubuntu bash   -- run ubuntu container!
