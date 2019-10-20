@@ -1,6 +1,6 @@
 # Wifi Data extractor for TU Delft
 
-A python application which extracts data from the [Cisco Prime](https://www.cisco.com/c/en/us/products/cloud-systems-management/prime-infrastructure/index.html) infrastructure of TU Delft and streams the data to [Apache Kafka](https://kafka.apache.org/)to be used by researchers.
+A python application which extracts data from the [Cisco Prime](https://www.cisco.com/c/en/us/products/cloud-systems-management/prime-infrastructure/index.html) infrastructure of TU Delft and streams the data to [Apache Kafka](https://kafka.apache.org/) to be used by researchers.
 
 ## Getting Started
 
@@ -9,17 +9,23 @@ These instructions will get you a copy of the project up and running on your loc
 * [flatten-json](https://pypi.org/project/flatten-json/) 
 * [kafka-python](https://github.com/dpkp/kafka-python)
 * [Curl](https://curl.haxx.se/)
-* [Pandas] (https://pypi.org/project/pandas/)
+* [Pandas](https://pypi.org/project/pandas/)
 ### Prerequisites
 
 Docker is required to run the system and can be installed by - 
 
-* [Install Docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/) - Used to run Kafka, [Zookeeper](https://zookeeper.apache.org/) and other dependencies.
+* [Install Docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
+The following command builds the images and the containers for the Dockerfile-
+```
+- docker build .
+```
+Execute this command to run the dockerfile
+```
+-  docker-compose up
+```
 Say what the step will be
 
 ```
