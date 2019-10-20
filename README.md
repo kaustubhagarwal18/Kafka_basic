@@ -1,4 +1,4 @@
-# TU Delft Wifi Access point Data extractor(part of Data-Centric Design)
+# TU Delft Wifi Access point Data extractor(part of - Responsible IOT Data Research)
 
 - A python application which extracts data from the [Cisco Prime](https://www.cisco.com/c/en/us/products/cloud-systems-management/prime-infrastructure/index.html) infrastructure of TU Delft and streams the data to [Apache Kafka](https://kafka.apache.org/) to be used by researchers. 
 The following queries can be fetched by the producers - 
