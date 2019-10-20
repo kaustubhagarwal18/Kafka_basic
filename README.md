@@ -1,10 +1,12 @@
-# Wifi Data extractor for TU Delft
+# TU Delft Wifi Access point Data extractor(part of Data-Centric Design)
 
-Data-Centric Design - A python application which extracts data from the [Cisco Prime](https://www.cisco.com/c/en/us/products/cloud-systems-management/prime-infrastructure/index.html) infrastructure of TU Delft and streams the data to [Apache Kafka](https://kafka.apache.org/) to be used by researchers. 
+- A python application which extracts data from the [Cisco Prime](https://www.cisco.com/c/en/us/products/cloud-systems-management/prime-infrastructure/index.html) infrastructure of TU Delft and streams the data to [Apache Kafka](https://kafka.apache.org/) to be used by researchers. 
 The following queries can be fetched by the producers - 
 - Client Stats
 - Client Sessions
 - Client Details
+- Some more to be added soon
+
 There is a producer program for each query which pushes data to different topics(Daily,Monthly,Vendor) and a consumer program which collects the data and writes it to a csv file.
 
 ### Prerequisites
