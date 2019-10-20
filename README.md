@@ -51,47 +51,9 @@ The data can be queried in a [paged](https://solutionpartner.cisco.com/media/pri
 - Devices?.full=true&.maxResults=4&.firstResult=4    (four results (4-7))
 ```
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-
-
-
-
-
-
-
-
-## Authors
-
-* **Kaustubh Agarwal** - *Initial work* - [PurpleBooth](https://github.com/Kaustubhagarwal18)
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://opensource.org/licenses/MIT) file for details
-
-
-
-
-
-
-
-
-
-
-
-# Wifi Data
-
-Data-Centric Design
 
 # Changelog
 
@@ -100,18 +62,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## Authors
 
-### Added
-
-- TODO: Access Prime Cisco API
-- TODO: Push data into kafka
-
-# Paging via the query string
-
-- Devices?.full=true&.firstResult=0&.maxResults=4    (First four results(0-3))
-- Devices?.full=true&.maxResults=4&.firstResult=4    (four results (4-7))
-
+* [Kaustubh Agarwal](https://github.com/Kaustubhagarwal18)
 - 
 # merge 
 - git checkout master
