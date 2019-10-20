@@ -67,12 +67,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Authors
 
 * [Kaustubh Agarwal](https://github.com/Kaustubhagarwal18)
-- 
+
 # merge 
 - git checkout master
 - git pull origin master
 - git merge test
 - git push origin master
-- 
+
 
 
