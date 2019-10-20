@@ -46,10 +46,10 @@ The consumer will produce the csv fle which can be distributed on authorization 
 ### Paging for large amount of data
 
 The data can be queried in a [paged](https://solutionpartner.cisco.com/media/prime-infrastructure/api-reference/szier-m8-106.cisco.com/webacs/api/v3/index9df8.html?id=paging-doc) format like -  
-
+```
 - Devices?.full=true&.firstResult=0&.maxResults=4    (First four results(0-3))
 - Devices?.full=true&.maxResults=4&.firstResult=4    (four results (4-7))
-
+```
 
 ## Running the tests
 
@@ -63,37 +63,17 @@ Explain what these tests test and why
 Give an example
 ```
 
-### And coding style tests
 
-Explain what these tests test and why
 
-```
-Give an example
-```
 
-## Deployment
 
-Add additional notes about how to deploy this on a live system
 
-## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Kaustubh Agarwal** - *Initial work* - [PurpleBooth](https://github.com/Kaustubhagarwal18)
 
 ## License
 
