@@ -7,19 +7,19 @@ The following queries can be fetched by the producers -
 - Client Details
 There is a producer program for each query which pushes data to different topics(Daily,Monthly,Vendor) and a consumer program which collects the data and writes it to a csv file.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. The docker file will run the environment and also install the necessary libraries like -
-* [python package installer](https://pip.pypa.io/en/stable/) 
-* [flatten-json](https://pypi.org/project/flatten-json/) 
-* [kafka-python](https://github.com/dpkp/kafka-python)
-* [Curl](https://curl.haxx.se/)
-* [Pandas](https://pypi.org/project/pandas/)
 ### Prerequisites
 
 Docker is required to run the system and can be installed by - 
 
 * [Install Docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+
+## Getting Started
+You can clone or download the repository to run it on your local machine for development and testing purposes. The docker file will run the environment and also install the necessary libraries like -
+* [python package installer](https://pip.pypa.io/en/stable/) 
+* [flatten-json](https://pypi.org/project/flatten-json/) 
+* [kafka-python](https://github.com/dpkp/kafka-python)
+* [Curl](https://curl.haxx.se/)
+* [Pandas](https://pypi.org/project/pandas/)
 
 ### Installing
 
@@ -35,10 +35,11 @@ The status of the docker containers can be checked by the following command
 ```
 -  docker ps
 ```
-After this run the
+After this you can run the producer and consumer on different terminal using -
 
 ```
-- [Install Docker](https://kafka.apache.org/)
+- python producer.py
+- python consumer.py
 ```
 
 And repeat
