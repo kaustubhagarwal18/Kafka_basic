@@ -1,6 +1,11 @@
 # Wifi Data extractor for TU Delft
 
-A python application which extracts data from the [Cisco Prime](https://www.cisco.com/c/en/us/products/cloud-systems-management/prime-infrastructure/index.html) infrastructure of TU Delft and streams the data to [Apache Kafka](https://kafka.apache.org/) to be used by researchers.
+A python application which extracts data from the [Cisco Prime](https://www.cisco.com/c/en/us/products/cloud-systems-management/prime-infrastructure/index.html) infrastructure of TU Delft and streams the data to [Apache Kafka](https://kafka.apache.org/) to be used by researchers. 
+The following queries can be fetched by the producers - 
+- Client Stats
+- Client Sessions
+- Client Details
+There is a producer program for each query which pushes data to different topics(Daily,Monthly,Vendor) and a consumer program which collects the data and writes it to a csv file.
 
 ## Getting Started
 
@@ -26,7 +31,11 @@ Execute this command to run the dockerfile
 ```
 -  docker-compose up
 ```
-Say what the step will be
+The status of the docker containers can be checked by the following command
+```
+-  docker ps
+```
+After this run the
 
 ```
 - [Install Docker](https://kafka.apache.org/)
