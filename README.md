@@ -4,15 +4,15 @@ A python application which extracts data from the [Cisco Prime](https://www.cisc
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. The docker file will run the environment and also install the necessary libraries like -
+* [flatten-json](https://pypi.org/project/flatten-json/) 
+* [kafka-python](https://github.com/dpkp/kafka-python) 
 
 ### Prerequisites
 
 What things you need to install the software and how to install them
 
-
-* [Install Docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/) - The web framework used
-
+* [Install Docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/) - Used to run Kafka, [Zookeeper](https://zookeeper.apache.org/) and other dependencies.
 
 ### Installing
 
