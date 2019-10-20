@@ -1,6 +1,6 @@
 # Wifi Data extractor for TU Delft
 
-A python application which extracts data from the [Cisco Prime](https://www.cisco.com/c/en/us/products/cloud-systems-management/prime-infrastructure/index.html) infrastructure of TU Delft and streams the data to [Apache Kafka](https://kafka.apache.org/) to be used by researchers. 
+Data-Centric Design - A python application which extracts data from the [Cisco Prime](https://www.cisco.com/c/en/us/products/cloud-systems-management/prime-infrastructure/index.html) infrastructure of TU Delft and streams the data to [Apache Kafka](https://kafka.apache.org/) to be used by researchers. 
 The following queries can be fetched by the producers - 
 - Client Stats
 - Client Sessions
@@ -35,20 +35,21 @@ The status of the docker containers can be checked by the following command
 ```
 -  docker ps
 ```
-After this you can run the producer and consumer on different terminal using -
+After this you can run the producer and consumer on different terminals using -
 
 ```
 - python producer.py
 - python consumer.py
 ```
+The consumer will produce the csv fle which can be distributed on authorization levels. 
 
-And repeat
+### Paging for large amount of data
 
-```
-until finished
-```
+The data can be queried in a [paged](https://solutionpartner.cisco.com/media/prime-infrastructure/api-reference/szier-m8-106.cisco.com/webacs/api/v3/index9df8.html?id=paging-doc) format like -  
 
-End with an example of getting some data out of the system or using it for a little demo
+- Devices?.full=true&.firstResult=0&.maxResults=4    (First four results(0-3))
+- Devices?.full=true&.maxResults=4&.firstResult=4    (four results (4-7))
+
 
 ## Running the tests
 
@@ -96,13 +97,8 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://opensource.org/licenses/MIT) file for details
 
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 
 
 
@@ -135,7 +131,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Devices?.full=true&.firstResult=0&.maxResults=4    (First four results(0-3))
 - Devices?.full=true&.maxResults=4&.firstResult=4    (four results (4-7))
-- Use multiple consumers in parallel w/ 0.9 kafka brokers# typically you would run each on a different server / process / CPU
+
 - 
 # merge 
 - git checkout master
