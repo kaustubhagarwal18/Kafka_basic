@@ -1,16 +1,18 @@
 # Wifi Data extractor for TU Delft
 
-A python application which extracts data from the [Cisco Prime](https://www.cisco.com/c/en/us/products/cloud-systems-management/prime-infrastructure/index.html) infrastructure of TU Delft and streams the data to Apache Kafka [Apache Kafka](https://kafka.apache.org/)to be used by researchers.
+A python application which extracts data from the [Cisco Prime](https://www.cisco.com/c/en/us/products/cloud-systems-management/prime-infrastructure/index.html) infrastructure of TU Delft and streams the data to [Apache Kafka](https://kafka.apache.org/)to be used by researchers.
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. The docker file will run the environment and also install the necessary libraries like -
+* [python package installer](https://pip.pypa.io/en/stable/) 
 * [flatten-json](https://pypi.org/project/flatten-json/) 
-* [kafka-python](https://github.com/dpkp/kafka-python) 
-
+* [kafka-python](https://github.com/dpkp/kafka-python)
+* [Curl](https://curl.haxx.se/)
+* [Pandas] (https://pypi.org/project/pandas/)
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Docker is required to run the system and can be installed by - 
 
 * [Install Docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/) - Used to run Kafka, [Zookeeper](https://zookeeper.apache.org/) and other dependencies.
 
