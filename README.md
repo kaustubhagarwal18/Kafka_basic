@@ -10,9 +10,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-```
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-```
+
+* [Install Docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/) - The web framework used
+
 
 ### Installing
 
